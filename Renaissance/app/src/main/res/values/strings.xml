@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Renaissance</string>
+    <string name="navigation_drawer_open">drawer open</string>
+    <string name="navigation_drawer_close">drawer close</string>
+    <string name="action_settings">settings</string>
+    <string name="fa_commenting_o">&#xf27b;</string>
+    <string name="fa_bell_o">&#xf0a2;</string>
+    <string name="fa_camera_retro">&#xf083;</string>
+    <string name="fa_thumbs_o_up">&#xf087;</string>
+    <string name="fa_camera">&#xf030;</string>
+    <string name="fa_tags">&#xf02c;</string>
+    <string name="fa_star_o">&#xf006;</string>
+    <string name="fa_share_alt">&#xf1e0;</string>
+    <string name="fa_arrow_left">&#xf060;</string>
+    <string name="fa_angle_down">&#xf107;</string>
+    <string name="fa_angle_right">&#xf105;</string>
+    <string name="fa_map_marker">&#xf041;</string>
+    <string name="fa_user">&#xf007;</string>
+    <string name="fa_home">&#xf015;</string>
+    <string name="fa_search">&#xf002;</string>
+    <string name="fa_book">&#xf02d;</string>
+    <string name="fa_picture_o">&#xf03e;</string>
+</resources>

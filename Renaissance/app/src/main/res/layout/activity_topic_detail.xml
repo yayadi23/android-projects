@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.renaissance.activity.TopicDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/topicToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/item_profile_image1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/michael"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/item_author_name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Michael Jackson"
+                            android:textSize="16sp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="1dp"
+                            android:textColor="@color/colorBlue"/>
+
+                        <TextView
+                            android:id="@+id/item_time1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017.7.10   10:00"
+                            android:textColor="@color/colorLightGreyFont"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="8dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/item_content_detail1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="看过《达·芬奇密码》的人大概都知道达·芬奇密码筒。按照故事情节，密码筒里藏匿着关于郇山隐修会乃至整个基督教最大秘密的莎草纸。达·芬奇设计的密码筒内有一个装着醋液的容器，如果强行砸烂密码筒，醋液就会流出溶解莎草纸。要打开密码筒，必须解开一个5位数的密码，密码筒上有5个转盘，每个转盘上都有26个字母，可能作为密码的排列组合多达11881376种。达芬奇密码到底是怎么破解的？"
+                    android:textColor="@color/colorHeavyGreyFont"
+                    android:layout_marginTop="8dp"/>
+                <HorizontalScrollView
+                    android:id="@+id/scroll_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbarAlwaysDrawHorizontalTrack="false"
+                    android:layout_marginTop="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/davinci4"
+                            android:scaleType="centerCrop"/>
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/davinci7"
+                            android:scaleType="centerCrop"
+                            android:layout_marginLeft="10dp"/>
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/davinci5"
+                            android:scaleType="centerCrop"
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorGreyBar"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最新评论"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/colorLightGreyFont"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="("/>
+                <TextView
+                    android:id="@+id/comment_count2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=")"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/item_commenter_profile_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/adele"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/item_commenter_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Adele"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:paddingTop="1dp"
+                            android:textColor="@color/colorBlue"/>
+
+                        <TextView
+                            android:id="@+id/item_commenter_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7分钟前"
+                            android:textColor="@color/colorLightGreyFont"
+                            android:layout_marginLeft="10dp"
+                            android:paddingTop="8dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LZ看你是要哪个密码喽。无论是小说还是电影，里面构成故事的一系列线索都可以是密码。"
+                    android:textColor="@color/colorHeavyGreyFont"
+                    android:paddingLeft="60dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="2dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/colorGreyBar"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/item_commenter_profile_image1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/demilovato"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/item_commenter_name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Demi Lovato"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:paddingTop="1dp"
+                            android:textColor="@color/colorBlue"/>
+
+                        <TextView
+                            android:id="@+id/item_commenter_time1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10分钟前"
+                            android:textColor="@color/colorLightGreyFont"
+                            android:layout_marginLeft="10dp"
+                            android:paddingTop="8dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="“古老罗林下圣杯等待”Roselin、兰登误解了这个词。而最终他才在旅馆里看到了自己的血液，尔后醒悟是Roseline(玫瑰线)，即本初子午线。"
+                    android:textColor="@color/colorHeavyGreyFont"
+                    android:paddingLeft="60dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="2dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/colorGreyBar"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/item_commenter_profile_image2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/katyperry"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/item_commenter_name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Katy Perry"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:paddingTop="1dp"
+                            android:textColor="@color/colorBlue"/>
+
+                        <TextView
+                            android:id="@+id/item_commenter_time2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1小时前"
+                            android:textColor="@color/colorLightGreyFont"
+                            android:layout_marginLeft="10dp"
+                            android:paddingTop="8dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="“刀刃与圣爵守护伊门宅”，卢浮宫广场上的透明倒立玻璃金字塔，就全是^与v的组合，代表着古老的男女性别的符号。"
+                    android:textColor="@color/colorHeavyGreyFont"
+                    android:paddingLeft="60dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="2dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/colorGreyBar"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

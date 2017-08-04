@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/loop_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/davinci1"/>
+    <TextView
+        android:id="@+id/loop_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="500年后的佛罗伦萨\n--florence--"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_vertical"/>
+
+</FrameLayout>

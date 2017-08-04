@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:paddingTop="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/item_profile_image1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ladygaga"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/item_author_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lady Gaga"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                android:paddingTop="1dp"
+                android:textColor="@color/colorBlue"/>
+
+            <TextView
+                android:id="@+id/item_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017.7.10   10:00"
+                android:textColor="@color/colorLightGreyFont"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/fa_commenting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:text="@string/fa_commenting_o"
+                    android:textColor="@color/colorLightGreyFont"/>
+                <TextView
+                    android:id="@+id/item_comment_count1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="8dp"
+                    android:text="999+"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wubiernuo6"
+            android:layout_marginRight="16dp"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wubiernuo13"
+            android:layout_marginRight="16dp"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wubiernuo14"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_image_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="共9张照片"
+        android:paddingTop="8dp"
+        android:textColor="@color/colorLightGreyFont"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+        <TextView
+            android:id="@+id/item_commenter_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taylor Swift"
+            android:textColor="@color/colorBlue"
+            />
+
+        <TextView
+            android:id="@+id/item_fixed_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:text="最新评论："
+            android:textColor="@color/colorHeavyGreyFont"
+            />
+        <TextView
+            android:id="@+id/item_comment1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="话说楼主有在里面看到拉斐尔的肖像画吗？"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorHeavyGreyFont"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="353dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorGreyBar"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff4081</color>
+    <color name="colorPrimaryDark">#ff4081</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="rollViewTitle">#ffffff</color>
+    <color name="colorHometv">#616161</color>
+    <color name="colorLightGreyFont">#616161</color>
+    <color name="colorHeavyGreyFont">#333333</color>
+    <color name="colorGreyBar">#f2f2f2</color>
+    <color name="colorBlue">#2979ff</color>
+</resources>
