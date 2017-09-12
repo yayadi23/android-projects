@@ -498,18 +498,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        switch (resultCode){
-            case RESULT_OK:{
-                switch (requestCode) {
-                    case 1:
+
+        switch (requestCode) {
+            case 1: {
+                switch (resultCode) {
+                    case RESULT_OK:
                         String string = urlStr + data.getStringExtra("cityName");//当用户在搜索页退出时，会产生异常，因为data是null
-//                Log.d("MainActivityLog", string);
-                        SharedPreferences sh = getSharedPreferences("data",MODE_PRIVATE);//shit!这里写成了date，而不是data！
-                        citySet = sh.getStringSet("citys",null);
-                        if(citySet != null){
+                        SharedPreferences sh = getSharedPreferences("data", MODE_PRIVATE);//shit!这里写成了date，而不是data！
+                        citySet = sh.getStringSet("citys", null);
+                        if (citySet != null) {
                             citySet.add(data.getStringExtra("cityName"));
                             SharedPreferences.Editor editor = sh.edit();
-                            editor.putStringSet("citys",citySet);
+                            editor.putStringSet("citys", citySet);
                             editor.commit();
                         }
                         Toast.makeText(this, data.getStringExtra("cityName"), Toast.LENGTH_SHORT).show();
@@ -521,6 +521,7 @@ public class MainActivity extends AppCompatActivity {
             }
             default:
                 break;
+
         }
     }
 
